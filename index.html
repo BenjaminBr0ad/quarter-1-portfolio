@@ -6,6 +6,7 @@
 
     <!-- =====[ LOADING GOOGLE FONTS ]===== -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <!-- =====[ LOADING FONTAWESOME ]===== -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
     <!-- =====[ LOADING MATERIALIZE CSS ] ===== -->
@@ -15,38 +16,93 @@
   </head>
 
   <body>
-
+    <!-- ===== [ NAV BAR ] ===== -->
     <nav>
-    <div class="nav-wrapper black">
-      <a href="#!" class="brand-logo"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a class="active" href="sass.html">Home</a></li>
-        <li><a class="" href="badges.html">About</a></li>
-        <li><a class="" href="collapsible.html">Projects</a></li>
-        <li><a class="" href="mobile.html">Contact</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Home</a></li>
-        <li><a href="badges.html">About</a></li>
-        <li><a href="collapsible.html">Projects</a></li>
-        <li><a href="mobile.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+      <div class="nav-wrapper deep-orange">
+        <a href="#!" class="brand-logo"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="active btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Home" href="sass.html"><i class="material-icons">home</i></a></li>
+          <li><a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="About" href="badges.html"><i class="material-icons">face</i></a></li>
+          <li><a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Portfolio" href="collapsible.html"><i class="material-icons">folder_shared</i></a></li>
+          <li><a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Contact" href="mobile.html"><i class="material-icons">chat</i></a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="sass.html">Home</a></li>
+          <li><a href="badges.html">About</a></li>
+          <li><a href="collapsible.html">Projects</a></li>
+          <li><a href="mobile.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ===== [ END NAV BAR ] ===== -->
 
-  <div class="parallax-container">
-    <div class="parallax"><img src="img/poi.jpg"></div>
-  </div>
-  <div class="section black white-text">
-    <div class="row container">
-      <h2 class="header">Benjamin J. Broad</h2>
-      <p class="grey-text text-lighten-5">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    <!-- ===== [ PARALLAX CONTENT ] ===== -->
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/poi.jpg"></div>
     </div>
-  </div>
-  <div class="parallax-container">
-    <div class="parallax"><img src="img/poi2.jpg"></div>
-  </div>
+    <div class="section amber darken-3 white-text">
+      <div class="row container">
+        <h2 class="header">Benjamin J. Broad</h2>
+        <p class="grey-text text-lighten-5">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/poi4.jpg"></div>
+    </div>
+    <div class="section amber darken-3 white-text">
+      <div class="row container">
+        <ul class="collapsible popout" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header black-text"><i class="material-icons">filter_drama</i>Expression...</div>
+            <div class="collapsible-body"><span>Connecting with others through mindful interaction.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header black-text"><i class="material-icons">gesture</i>Through...</div>
+            <div class="collapsible-body"><span></span></div>
+          </li>
+          <li>
+            <div class="collapsible-header black-text"><i class="material-icons">toys</i>Movement...</div>
+            <div class="collapsible-body"><span>Movement art is my passion.</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/poi5.jpg"></div>
+    </div>
+    <!-- ===== [ END PARALLAX CONTENT ] ===== -->
+
+    <!-- ===== [ FOOTER ] ===== -->
+    <footer class="page-footer deep-orange">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2018 Benjamin J. Broad
+          <div class="right">
+            <a class="white-text" target="_blank" href="https://github.com/BenjaminBr0ad/quarter-1-portfolio"><i class="fab fa-github fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="white-text" target="_blank" href="https://www.linkedin.com/in/benjamin-j-broad/"><i class="fab fa-linkedin fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ===== [ END FOOTER ] ===== -->
 
 
   <!-- =====[ LOADING jQUERY 3.2.1 ]===== -->

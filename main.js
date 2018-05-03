@@ -4,4 +4,6 @@ $( document ).ready(function(){
 
   $('.parallax').parallax(); // Parallax
 
+  $('.tooltipped').tooltip({delay: 50});
+
 }) // ===== [ END DOCUMENT READY ] ===== //
