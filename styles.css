@@ -10,6 +10,7 @@
   font-family: 'Rubik', sans-serif;
 }
 
-.staggered-list {
+
+#html-icon, #js-icon, #css-icon {
   opacity: 0;
 }
