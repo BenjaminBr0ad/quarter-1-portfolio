@@ -4,3 +4,6 @@
 
 Color Palette Approximation:
 ![Example](img/palette.png)
+
+Wireframe Mock-Up:
+![Example](img/mock.png)
