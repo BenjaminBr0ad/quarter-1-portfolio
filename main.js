@@ -24,9 +24,12 @@ $( document ).ready(function(){
   var fadeInSlogan = new ScrollMagic.Scene({
     triggerElement: "#banner-1"
     })
-    .setTween("#slogan", 1, {opacity: 1})
+    .on("start", function (e) {
+      TweenMax.to($("#slogan"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
+    })
     // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller);
+
   var fadeInLocated = new ScrollMagic.Scene({
     triggerElement: "#banner-1"
     })
@@ -38,7 +41,9 @@ $( document ).ready(function(){
     triggerElement: "#name-text",
     offset: 350
   })
-    .setTween("#banner-1", 1, {opacity:0})
+    .on("start", function (e) {
+      TweenMax.to($("#banner-1"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
+    })
     // .addIndicators()
     .addTo(controller);
 //==========================================//
@@ -54,7 +59,9 @@ $( document ).ready(function(){
   var fadeInBanner2 = new ScrollMagic.Scene({
     triggerElement: "#banner-2"
   })
-    .setTween("#banner-2", 1, {opacity: 1})
+    .on("start", function (e) {
+      TweenMax.to($("#banner-2"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
+    })
     // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller);
 
@@ -62,14 +69,16 @@ $( document ).ready(function(){
     triggerElement: "#banner-2",
     offset: 2200
   })
-    .setTween("#banner-2", 1, {opacity:0})
+    .on("start", function (e) {
+      TweenMax.to($("#banner-2"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
+    })
     // .addIndicators()
     .addTo(controller);
 //==========================================//
 //=================Banner #3================//
 var bannerPin3 = new ScrollMagic.Scene({
   duration: 2000,
-  offset: 5900
+  offset: 5800
 })
   .setPin("#banner-3")
   // .addIndicators()
@@ -78,7 +87,9 @@ var bannerPin3 = new ScrollMagic.Scene({
 var fadeInBanner3 = new ScrollMagic.Scene({
   triggerElement: "#banner-3"
 })
-  .setTween("#banner-3", 1, {opacity: 1})
+  .on("start", function (e) {
+    TweenMax.to($("#banner-3"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
+  })
   // .addIndicators({name:"1 (duration:0)"})
   .addTo(controller);
 
@@ -86,14 +97,16 @@ var fadeOutBanner3 = new ScrollMagic.Scene({
   triggerElement: "#banner-3",
   offset: 2200
 })
-  .setTween("#banner-3", 1, {opacity:0})
+  .on("start", function (e) {
+    TweenMax.to($("#banner-3"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
+  })
   // .addIndicators()
   .addTo(controller);
 //==========================================//
 //=================Banner #4================//
 var bannerPin4 = new ScrollMagic.Scene({
   duration: 2000,
-  offset: 9500
+  offset: 9400
 })
   .setPin("#banner-4")
   // .addIndicators()
@@ -102,15 +115,19 @@ var bannerPin4 = new ScrollMagic.Scene({
 var fadeInBanner4 = new ScrollMagic.Scene({
   triggerElement: "#banner-4"
 })
-  .setTween("#banner-4", 1, {opacity: 1})
-  .addIndicators()
+  .on("start", function (e) {
+    TweenMax.to($("#banner-4"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
+  })
+  // .addIndicators()
   .addTo(controller);
 
 var fadeOutBanner4 = new ScrollMagic.Scene({
   triggerElement: "#banner-4",
   offset: 2200
 })
-  .setTween("#banner-4", 1, {opacity: 0})
-  .addIndicators()
+  .on("start", function (e) {
+    TweenMax.to($("#banner-4"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
+  })
+  // .addIndicators()
   .addTo(controller);
 }) // ===== [ END DOCUMENT READY ] ===== //
