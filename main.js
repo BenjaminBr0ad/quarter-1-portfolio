@@ -53,27 +53,6 @@ $( document ).ready(function(){
     // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller);
 
-  var fadeInHtml = new ScrollMagic.Scene({
-    triggerElement: "#banner-2"
-  })
-    .setTween("#html-icon", 1, {opacity: 1})
-    // .addIndicators({name:"1 (duration:0)"})
-    .addTo(controller);
-
-  var fadeInJS = new ScrollMagic.Scene({
-    triggerElement: "#banner-2"
-  })
-    .setTween("#js-icon", 1, {opacity: 1})
-    // .addIndicators({name:"1 (duration:0)"})
-    .addTo(controller)
-
-  var fadeInCSS = new ScrollMagic.Scene({
-    triggerElement: "#banner-2"
-  })
-    .setTween("#css-icon", 1, {opacity: 1})
-    // .addIndicators({name:"1 (duration:0)"})
-    .addTo(controller)
-
   var fadeOutBanner2 = new ScrollMagic.Scene({triggerElement: "#banner-2", offset: 800})
     .setTween("#banner-2", 1, {opacity:0})
     // .addIndicators()
