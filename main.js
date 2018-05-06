@@ -46,6 +46,13 @@ $( document ).ready(function(){
   // .addIndicators()
   .addTo(controller);
 
+  var fadeInBanner2 = new ScrollMagic.Scene({
+    triggerElement: "#banner-2"
+  })
+    .setTween("#banner-2", 1, {opacity: 1})
+    // .addIndicators({name:"1 (duration:0)"})
+    .addTo(controller);
+
   var fadeInHtml = new ScrollMagic.Scene({
     triggerElement: "#banner-2"
   })
@@ -80,6 +87,13 @@ var bannerPin3 = new ScrollMagic.Scene({
 .setPin("#banner-3")
 // .addIndicators()
 .addTo(controller);
+
+var fadeInBanner3 = new ScrollMagic.Scene({
+  triggerElement: "#banner-3"
+})
+  .setTween("#banner-3", 1, {opacity: 1})
+  // .addIndicators({name:"1 (duration:0)"})
+  .addTo(controller);
 
 var fadeOutBanner3 = new ScrollMagic.Scene({triggerElement: "#banner-3", offset: 1200})
   .setTween("#banner-3", 1, {opacity:0})

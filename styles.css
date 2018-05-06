@@ -24,12 +24,20 @@
 #html-icon, #js-icon, #css-icon {
   opacity: 0;
 }
+
+#banner-2 {
+  opacity: 0;
+}
 /* ----------------------------- */
 
 /* ----- Banner#3 About Me Settings ----- */
 .enso {
   max-width: 500px;
   max-height: 500px;
+}
+
+#banner-3 {
+  opacity: 0;
 }
 
 .about {
