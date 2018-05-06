@@ -1,16 +1,37 @@
+/* ----- Parallax Settings ----- */
 .parallax-container {
-  height: 600px;
-}
-
-.sky {
   height: 650px;
 }
 
-.header, #contact-text {
+.sky {
+  height: 850px;
+}
+/* ----------------------------- */
+
+/* ------- Font Settings ------- */
+.header, #contact-text, #skills, #slogan, #banner-3 {
   font-family: 'Rubik', sans-serif;
 }
+/* ----------------------------- */
 
+/* ----- Banner#1 Settings ----- */
+#slogan, #located {
+  opacity: 0;
+}
+/* ----------------------------- */
 
+/* ----- Banner#2 Settings ----- */
 #html-icon, #js-icon, #css-icon {
   opacity: 0;
 }
+
+/* ----- Banner#3 Settings ----- */
+.enso {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.about {
+  font-size: 1.1em;
+}
+/* ----------------------------- */
