@@ -9,25 +9,24 @@
 /* ----------------------------- */
 
 /* ------- Font Settings ------- */
-.header, #contact-text, #skills, #slogan, #banner-3 {
+.header, #contact-text, #skills, #slogan, #banner-3, #banner-4 {
   font-family: 'Rubik', sans-serif;
 }
 /* ----------------------------- */
 
-/* ----- Banner#1 Name/Intro Settings ----- */
+/* - Banner#1 Name/Intro Settings - */
 #slogan, #located {
   opacity: 0;
 }
 /* ----------------------------- */
 
-/* ----- Banner#2 Skills Overview Settings ----- */
-
+/* - Banner#2 Skills Overview Settings - */
 #banner-2 {
   opacity: 0;
 }
 /* ----------------------------- */
 
-/* ----- Banner#3 About Me Settings ----- */
+/* - Banner#3 About Me Settings - */
 .enso {
   max-width: 500px;
   max-height: 500px;
@@ -40,9 +39,27 @@
 .about {
   font-size: 1.2em;
 }
-
 /* ----------------------------- */
 
+/* - Banner#4 Portfolio Settings - */
+.ss {
+  border: 1px solid white;
+  padding: 1%;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#banner-4 {
+  opacity: 0;
+}
+/* ----------------------------- */
+
+.chip {
+  opacity: .8;
+}
+
+/* ------ Media Queries ------- */
 /* @media (max-width: 767px) {
   .parallax-container, .sky {
     height: 1000px;
@@ -53,3 +70,4 @@
   }
 
 } */
+/* ----------------------------- */
