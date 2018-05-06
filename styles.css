@@ -14,24 +14,37 @@
 }
 /* ----------------------------- */
 
-/* ----- Banner#1 Settings ----- */
+/* ----- Banner#1 Name/Intro Settings ----- */
 #slogan, #located {
   opacity: 0;
 }
 /* ----------------------------- */
 
-/* ----- Banner#2 Settings ----- */
+/* ----- Banner#2 Skills Overview Settings ----- */
 #html-icon, #js-icon, #css-icon {
   opacity: 0;
 }
+/* ----------------------------- */
 
-/* ----- Banner#3 Settings ----- */
+/* ----- Banner#3 About Me Settings ----- */
 .enso {
   max-width: 500px;
   max-height: 500px;
 }
 
 .about {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
+
 /* ----------------------------- */
+
+/* @media (max-width: 767px) {
+  .parallax-container, .sky {
+    height: 1000px;
+  }
+
+  #banner-3 {
+    font-size: 2.25rem;
+  }
+
+} */

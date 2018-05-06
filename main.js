@@ -13,7 +13,7 @@ $( document ).ready(function(){
 //=================Banner #1================//
   var bannerPin1 = new ScrollMagic.Scene({
     duration: 1000,
-    offset: 100
+    offset: 300
   })
   .setPin("#banner-1")
   // .addIndicators()
@@ -22,18 +22,18 @@ $( document ).ready(function(){
   var fadeInSlogan = new ScrollMagic.Scene({
     triggerElement: "#banner-1"
     })
-    .setTween("#slogan", 3, {opacity: 1})
+    .setTween("#slogan", 1, {opacity: 1})
     // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller);
   var fadeInLocated = new ScrollMagic.Scene({
     triggerElement: "#banner-1"
     })
-    .setTween("#located", 3, {opacity: 1})
+    .setTween("#located", 1, {opacity: 1})
     // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller);
 
   var fadeOutBanner1 = new ScrollMagic.Scene({triggerElement: "#name-text", offset: 50})
-    .setTween("#banner-1", 2, {opacity:0})
+    .setTween("#banner-1", 1, {opacity:0})
     // .addIndicators()
     .addTo(controller);
 //==========================================//
@@ -49,40 +49,40 @@ $( document ).ready(function(){
   var fadeInHtml = new ScrollMagic.Scene({
     triggerElement: "#banner-2"
   })
-    .setTween("#html-icon", 3, {opacity: 1})
+    .setTween("#html-icon", 1, {opacity: 1})
     // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller);
 
   var fadeInJS = new ScrollMagic.Scene({
     triggerElement: "#banner-2"
   })
-    .setTween("#js-icon", 2, {opacity: 1})
+    .setTween("#js-icon", 1, {opacity: 1})
     // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller)
 
   var fadeInCSS = new ScrollMagic.Scene({
     triggerElement: "#banner-2"
   })
-    .setTween("#css-icon", 4, {opacity: 1})
+    .setTween("#css-icon", 1, {opacity: 1})
     // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller)
 
   var fadeOutBanner2 = new ScrollMagic.Scene({triggerElement: "#banner-2", offset: 800})
-    .setTween("#banner-2", 2, {opacity:0})
+    .setTween("#banner-2", 1, {opacity:0})
     // .addIndicators()
     .addTo(controller);
 //==========================================//
 //=================Banner #3================//
 var bannerPin3 = new ScrollMagic.Scene({
   duration: 800,
-  offset: 4350
+  offset: 4450
 })
 .setPin("#banner-3")
 // .addIndicators()
 .addTo(controller);
 
-var fadeOutBanner3 = new ScrollMagic.Scene({triggerElement: "#banner-3", offset: 1000})
-  .setTween("#banner-3", 2, {opacity:0})
+var fadeOutBanner3 = new ScrollMagic.Scene({triggerElement: "#banner-3", offset: 1200})
+  .setTween("#banner-3", 1, {opacity:0})
   // .addIndicators()
   .addTo(controller);
 
