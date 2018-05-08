@@ -25,7 +25,7 @@ $( document ).ready(function(){
     triggerElement: "#banner-1"
     })
     .on("start", function (e) {
-      TweenMax.to($("#slogan"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
+      TweenMax.to($("#slogan"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
     })
     // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller);
@@ -42,7 +42,7 @@ $( document ).ready(function(){
     offset: 350
   })
     .on("start", function (e) {
-      TweenMax.to($("#banner-1"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
+      TweenMax.to($("#banner-1"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
     })
     // .addIndicators()
     .addTo(controller);
@@ -60,7 +60,7 @@ $( document ).ready(function(){
     triggerElement: "#banner-2"
   })
     .on("start", function (e) {
-      TweenMax.to($("#banner-2"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
+      TweenMax.to($("#banner-2"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
     })
     // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller);
@@ -70,38 +70,38 @@ $( document ).ready(function(){
     offset: 2200
   })
     .on("start", function (e) {
-      TweenMax.to($("#banner-2"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
+      TweenMax.to($("#banner-2"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
     })
     // .addIndicators()
     .addTo(controller);
 //==========================================//
 //=================Banner #3================//
-var bannerPin3 = new ScrollMagic.Scene({
-  duration: 2000,
-  offset: 5800
-})
-  .setPin("#banner-3")
-  // .addIndicators()
-  .addTo(controller);
-
-var fadeInBanner3 = new ScrollMagic.Scene({
-  triggerElement: "#banner-3"
-})
-  .on("start", function (e) {
-    TweenMax.to($("#banner-3"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
+  var bannerPin3 = new ScrollMagic.Scene({
+    duration: 2000,
+    offset: 5800
   })
-  // .addIndicators({name:"1 (duration:0)"})
-  .addTo(controller);
+    .setPin("#banner-3")
+    // .addIndicators()
+    .addTo(controller);
 
-var fadeOutBanner3 = new ScrollMagic.Scene({
-  triggerElement: "#banner-3",
-  offset: 2200
-})
-  .on("start", function (e) {
-    TweenMax.to($("#banner-3"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
+  var fadeInBanner3 = new ScrollMagic.Scene({
+    triggerElement: "#banner-3"
   })
-  // .addIndicators()
-  .addTo(controller);
+  .on("start", function (e) {
+    TweenMax.to($("#banner-3"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
+  })
+    // .addIndicators({name:"1 (duration:0)"})
+    .addTo(controller);
+
+  var fadeOutBanner3 = new ScrollMagic.Scene({
+    triggerElement: "#banner-3",
+    offset: 2200
+  })
+  .on("start", function (e) {
+    TweenMax.to($("#banner-3"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
+  })
+    // .addIndicators()
+    .addTo(controller);
 //==========================================//
 //=================Banner #4================//
 var bannerPin4 = new ScrollMagic.Scene({
@@ -116,7 +116,7 @@ var fadeInBanner4 = new ScrollMagic.Scene({
   triggerElement: "#banner-4"
 })
   .on("start", function (e) {
-    TweenMax.to($("#banner-4"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
+    TweenMax.to($("#banner-4"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
   })
   // .addIndicators()
   .addTo(controller);
@@ -126,8 +126,28 @@ var fadeOutBanner4 = new ScrollMagic.Scene({
   offset: 2200
 })
   .on("start", function (e) {
-    TweenMax.to($("#banner-4"), 0.5, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
+    TweenMax.to($("#banner-4"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
   })
   // .addIndicators()
   .addTo(controller);
+//==========================================//
+//=================Local Storage================//
+  const renderUserInfo = function () {
+    let userInfo = JSON.parse(localStorage.getItem('user_data'))
+    $('#icon_prefix').val(userInfo.name)
+    $('#icon_telephone').val(userInfo.phone)
+    $('#icon_email').val(userInfo.email)
+  }
+  renderUserInfo()
+
+  $('#submit').click(function () {
+    let userInfo = {}
+    if (document.getElementById('icon_prefix').checkValidity() && document.getElementById('icon_telephone').checkValidity() && document.getElementById('icon_email').checkValidity()) {
+      userInfo.name = $('#icon_prefix').val()
+      userInfo.phone = $('#icon_telephone').val()
+      userInfo.email = $('#icon_email').val()
+      localStorage.setItem('user_data', JSON.stringify(userInfo))
+    }
+  })
+
 }) // ===== [ END DOCUMENT READY ] ===== //
