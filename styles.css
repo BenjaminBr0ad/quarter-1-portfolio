@@ -60,14 +60,31 @@
 }
 
 /* ------ Media Queries ------- */
-/* @media (max-width: 767px) {
-  .parallax-container, .sky {
+  @media (max-width: 800px) {
+
+  .parallax-container {
     height: 1000px;
   }
 
-  #banner-3 {
-    font-size: 2.25rem;
+  #skills {
+    font-size: 1.5rem;
   }
 
-} */
+  #js-icon, #html-icon, #css-icon {
+    font-size: 4rem;
+  }
+
+  #name-text {
+    font-size: 2.5rem;
+  }
+
+  #slogan {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    font-size: 2rem;
+  }
+}
+
 /* ----------------------------- */
