@@ -56,7 +56,7 @@ $( document ).ready(function(){
     .on("start", function (e) {
       TweenMax.to($("#slogan"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 1 : 0});
     })
-    .addIndicators({name:"1 (duration:0)"})
+    // .addIndicators({name:"1 (duration:0)"})
     .addTo(controller);
 
     var fadeInLocated = new ScrollMagic.Scene({
@@ -176,7 +176,7 @@ $( document ).ready(function(){
   if (window.innerWidth >= 992) {
     var bannerPin4 = new ScrollMagic.Scene({
       duration: 2000,
-      offset: 9400
+      offset: 9500
     })
     .setPin("#banner-4")
     // .addIndicators()
@@ -193,7 +193,7 @@ $( document ).ready(function(){
 
     var fadeOutBanner4 = new ScrollMagic.Scene({
       triggerElement: "#banner-4",
-      offset: 2200
+      offset: 2500
     })
     .on("start", function (e) {
       TweenMax.to($("#banner-4"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
