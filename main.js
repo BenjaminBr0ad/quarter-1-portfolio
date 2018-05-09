@@ -213,7 +213,7 @@ $( document ).ready(function(){
 
     var fadeOutBanner4 = new ScrollMagic.Scene({
       triggerElement: "#banner-4",
-      offset: 2200
+      offset: 2500
     })
     .on("start", function (e) {
       TweenMax.to($("#banner-4"), 0.2, {opacity: e.scrollDirection === "FORWARD" ? 0 : 1});
