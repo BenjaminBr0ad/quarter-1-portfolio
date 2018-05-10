@@ -1,1 +1,64 @@
-[]
+[
+  {
+    "projectUrl": "http://clicky-painty.surge.sh",
+    "projectTitle": "Clicky / Painty",
+    "cardImg": "img/pixelart1.png",
+    "cardContent": "The aptly named Clicky / Painty is a simple, yet functional pixel art maker.  Easily create rich, pixely masterpieces with 14 color choices!  Features include drag and draw functionality, current color indication, and a reset button to give you fresh start after fresh start!",
+    "chipData": [
+                  {"img": "img/js-square.png", "text": "JavaScript"},
+                  {"img": "img/html5.png", "text": "HTML5"},
+                  {"img": "img/css3.png", "text": "CSS3"}
+                ],
+    "chipImage1": "img/js-square.png",
+    "chipText1": "JavaScript",
+    "chipImage2": "img/html5.png",
+    "chipText2": "HTML5",
+    "chipImage3": "img/css3.png",
+    "chipText3": "CSS3"
+  },
+
+  {
+    "projectUrl": "http://benjaminbr0ad-browser-calculator.surge.sh/",
+    "projectTitle": "Browser Calculator",
+    "cardImg": "img/calc2.png",
+    "cardContent": "This fully functional, browser-based calculator application can do just about anything a normal calculator does.  Scientific needs?  Turn it sidewise.  It works, I promise.  Built-in testing using Mocha & Chai gaurantees your numbers get crunched correctly every time!",
+    "chipData": [
+                  {"img": "img/js-square.png", "text": "JavaScript"},
+                  {"img": "img/html5.png", "text": "HTML5"},
+                  {"img": "img/css3.png", "text": "CSS3"},
+                  {"img": "img/mocha.png", "text": "Mocha"},
+                  {"img": "img/chai.png", "text": "Chai"}
+                ],
+    "chipImage1": "img/js-square.png",
+    "chipText1": "JavaScript",
+    "chipImage2": "img/html5.png",
+    "chipText2": "HTML5",
+    "chipImage3": "img/css3.png",
+    "chipText3": "CSS3",
+    "chipImage4": "img/mocha.png",
+    "chipText4": "Mocha",
+    "chipImage5": "img/chai.png",
+    "chipText5": "Chai"
+  },
+
+  {
+    "projectUrl": "http://benjaminbr0ad-galvanize-delivers.surge.sh/",
+    "projectTitle": "Galvanize Delivers",
+    "cardImg": "img/galv.png",
+    "cardContent": "Galvanize Delivers takes online food delivery to the next level!  This fully responsive site allows the user to easily order from a variety of local vendors on any device.  Built with Materialize CSS, Galvanize Delivers is sleek, elegant, responsive and incredibly user friendly!",
+    "chipData": [
+                  {"img": "img/js-square.png", "text": "JavaScript"},
+                  {"img": "img/html5.png", "text": "HTML5"},
+                  {"img": "img/css3.png", "text": "CSS3"},
+                  {"img": "img/materialize1.png", "text": "Materialize"}
+                ],
+    "chipImage1": "img/js-square.png",
+    "chipText1": "JavaScript",
+    "chipImage2": "img/html5.png",
+    "chipText2": "HTML5",
+    "chipImage3": "img/css3.png",
+    "chipText3": "CSS3",
+    "chipImage4": "img/materialize1.png",
+    "chipText4": "Materialize"
+  }
+]

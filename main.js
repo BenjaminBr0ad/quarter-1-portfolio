@@ -12,7 +12,7 @@ $( document ).ready(function(){
 //===== [ SCROLL MAGIC FUNCTIONALITY ] =====//
   var controller = new ScrollMagic.Controller();
 //==========================================//
-//=================Banner #1================//
+//=================Banner #1 [Intro]================//
   if (window.innerWidth >= 992) {
     var bannerPin1 = new ScrollMagic.Scene({
       duration: 1000,
@@ -72,7 +72,7 @@ $( document ).ready(function(){
     })
   }
 //==========================================//
-//=================Banner #2================//
+//=================Banner #2 [Skills]================//
   if (window.innerWidth >= 992) {
     var bannerPin2 = new ScrollMagic.Scene({
       duration: 2000,
@@ -122,7 +122,7 @@ $( document ).ready(function(){
     .addTo(controller);
   }
 //==========================================//
-//=================Banner #3================//
+//=================Banner #3 [About Me]================//
   if (window.innerWidth >= 992) {
     var bannerPin3 = new ScrollMagic.Scene({
       duration: 2000,
@@ -171,8 +171,6 @@ $( document ).ready(function(){
     // .addIndicators()
     .addTo(controller);
   }
-// ---- Dynamically Populate Recent Projects
-
 
 // ---- Attempt at SVG animation
 // function pathPrepare ($el) {
@@ -250,6 +248,38 @@ $( document ).ready(function(){
     // .addIndicators()
     .addTo(controller);
   }
+
+// ---- Dynamically Populate Recent Projects
+  $.getJSON("cards.json", function (content) {
+    for (let i = 0; i < content.length; i++) {
+      let chipHtml = ''
+      for (let j = 0; j < content[i].chipData.length; j++) {
+        chipHtml +=
+        `<div class="chip shake-slow">
+          <img src="${content[i].chipData[j].img}">
+            ${content[i].chipData[j].text}
+          </div>`
+      }
+      let cardHtml =
+        `<div class="col s12 m12 l4 center">
+          <a target="_blank" href="${content[i].projectUrl}"><h5 class="white-text"><u>${content[i].projectTitle}</u></h5></a>
+          <div class="card amber darken-2">
+            <div class="card-image">
+              <img src="${content[i].cardImg}">
+            </div>
+            <div class="card-content">
+              <p>${content[i].cardContent}</p>
+            </div>
+            <div class="card-action">
+              ${chipHtml}
+            </div>
+          </div>
+        </div>`
+
+      $("#banner-4").append(cardHtml)
+    }
+
+  })
 //==========================================//
 //=================Local Storage================//
   const renderUserInfo = function () {
