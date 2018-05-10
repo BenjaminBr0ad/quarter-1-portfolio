@@ -171,35 +171,8 @@ $( document ).ready(function(){
     // .addIndicators()
     .addTo(controller);
   }
-
-// ---- Attempt at SVG animation
-// function pathPrepare ($el) {
-//   for (let i = 0; i < $el.length; i++) {
-//     var lineLength = $el[i].getTotalLength();
-//     $el.css("stroke-dasharray", lineLength);
-//     $el.css("stroke-dashoffset", lineLength);
-//   }
-// }
-//
-// var $line = $("path.cls-1");
-// console.log($line)
-// for (let i = 0; i < $line.length; i++){
-//   pathPrepare($line[i]);
-// }
-//
-// var draw = new TimelineMax()
-//     .add(TweenMax.to($line[0], 0.9, {strokeDashoffset: 0,ease:Linear.easeNone}));
-//
-// var animateEnso = new ScrollMagic.Scene({
-//   triggerElement: "#banner-3",
-//   duration: 200,
-//   tweenChanges: true
-// })
-// .setTween(draw)
-// .addIndicators()
-// .addTo(controller);
 //==========================================//
-//=================Banner #4================//
+//=================Banner #4 [Portfolio]================//
   if (window.innerWidth >= 992) {
     var bannerPin4 = new ScrollMagic.Scene({
       duration: 2000,
@@ -249,7 +222,7 @@ $( document ).ready(function(){
     .addTo(controller);
   }
 
-// ---- Dynamically Populate Recent Projects
+// ---- Dynamically Populate Recent Projects ---- //
   $.getJSON("cards.json", function (content) {
     for (let i = 0; i < content.length; i++) {
       let chipHtml = ''
