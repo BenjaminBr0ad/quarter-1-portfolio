@@ -7,7 +7,7 @@ $( document ).ready(function(){
   $('.tooltipped').tooltip({delay: 50}); // Top & bottom menu tooltips
 
   $('.materialboxed').materialbox(); // Pop-out images
-//===== [ END MATERIALIZE FUNCTIONS ] =====//
+//==========================================//
 
 //===== [ SCROLL MAGIC FUNCTIONALITY ] =====//
   var controller = new ScrollMagic.Controller();
